@@ -1,29 +1,157 @@
 ---
 title: "Speaking Under Stress + Developing Credibility"
-author: "Sahil Deo, Christopher Gandrud, and Kevin Young"
+author: "Sahil Deo, Christian Franz, Christopher Gandrud, and Kevin Young"
 date: "31 October 2014"
 output:
+  revealjs::revealjs_presentation:
+    theme: solarized
+    transition: none
+    pandoc_args: [
+        "--css", "css/custom.css"
+    ]
   beamer_presentation: default
-  ioslides_presentation:
-    logo: img/HertieLogoBasic.png
+bibliography:
+    - Main.bib
 ---
 
 ## Research overview
 
-Understanding how monetary policymakers' use communication (speeches + press 
-releases) to **respond** to their political principals and 
-**develop credibility**.
+Understanding how monetary policymakers' use **communication** (speeches +
+press releases) to:
 
+- **respond** to their political principals
 
-## Questions we are interested in
+- **develop credibility**
 
-- What non-policy responses do monetary policymakers use to respond to stress
-from their political pricipals?
+## Developed vs. Developing
 
-- What do they consider 
+Monetary policymakers:
 
+**Developed**: tend to have **established**
+credibility and autonomy and may be using communication to **protect** it.
 
-## Main issues we are trying to tackle
+**Developing**: **trying to establish**
+these qualities.
 
-- Integrating disperate types of information, e.g. texts from multiple sources, 
-locational data, macroeconomic indicators.
+## Monetary policymaking in developed economies (US)
+
+- What do monetary policymakers consider stressful?
+
+    + Mandated areas?
+
+    + Something else (e.g. housing)?
+
+- What **non-policy tools** do they use to respond to this stress?
+
+    + Reaching out to important interest groups?
+
+    + What they talk about?
+
+## Monetary policymaking in developing economies (India)
+
+- How is monetary policy **communication credibility** enhanced?
+
+- What impact do central bank governor **appointments** have on communication
+credibility?
+
+## Some issues we are trying to tackle (1)
+
+Data (i.e. text) **availability**. Limited series of easily machine
+readable texts.
+
+- Tools for accessing the data seem almost as important as tools for
+analysing it.
+
+## Some issues we are trying to tackle (2)
+
+**Integrating disparate types** of information, e.g. texts from multiple
+sources, locational data, macroeconomic indicators.
+
+## Some issues we are trying to tackle (3)
+
+Identifying **state changes** in complex data.
+
+## Some issues we are trying to tackle (4)
+
+In both topic models and change point models we need to **a priori define**
+features of the underlying quantities (e.g. number of topics, minimum length
+of states).
+
+## Some issues we are trying to tackle (5)
+
+Using **topic proportions** as **dependent variables**:
+
+- Beta regression and Zero-One inflated Beta regression
+[e.g @ospina2010inflated] give results that many audiences
+find **confusing**.
+
+## Data availability (US Federal Reserve Project)
+
+\> 1100 Fed governor speeches from June
+1996 through present are easily accessible.
+
+Government Printing Office has House and Senate transcripts from 2001-2012
+easily accessible. Filled in with Committee websites, so:
+
+- Relevant House: 188 transcripts from May 1997-2012
+
+- Relevant Senate: 144 transcripts from 2001-2012
+
+## Data availability (US Federal Reserve Project)
+
+Effectively, our data is limited to the late 1990s through (about) the
+present.
+
+Greatly **limits the generalisability** of our findings as this is a very
+particular period of US monetary policymaking.
+
+More work needs to be done **creating corpora** of legislative and
+monetary policymaking transcripts.  
+
+Should be **easily and freely accessible** to improve **scientific
+efficiency**.
+
+## Data Availability (Resere Bank of India Project)
+
+[FILL IN]
+
+## Integrating disparate types of information
+
+[FILL IN]
+
+## Identifying state changes
+
+Posit that there are different "scrutiny states" (e.g. low, high).
+
+Each month or congressional hearing is not independent. But there is some
+underling scrutiny state that spans months.
+
+How to estimate?
+
+## Defining features a priori
+
+Non-parametric change point methods [e.g. @Matteson2014] require **minimum
+state lengths** to be determined a priori.
+
+Topic modelling with Latent Dirichlet Allocation requires a priori
+specification of **number of topics**.
+
+## Attempts to justify assumptions
+
+Guided by **substantive prior knowledge** + what we **learn from the
+data**.
+
+**Change point:**
+
+## Defining features a priori
+
+Nonetheless **reviewers seem to be skeptical** of methods where features of
+the data need to be defined a priori.
+
+How to overcome this skepticism?
+
+## Showing results from regressions with proportion dependent variables
+
+Topic proportion data
+
+## References
