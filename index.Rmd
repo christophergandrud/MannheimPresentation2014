@@ -6,6 +6,7 @@ output:
   ioslides_presentation:
     fig_caption: true
     logo: img/HertieLogoBasic.png
+    css: css/custom.css
   beamer_presentation: default
 bibliography:
     - Main.bib
@@ -16,18 +17,18 @@ bibliography:
 Understanding how monetary policymakers' use **communication** (speeches +
 press releases) to:
 
-- **respond** to their political principals
+- respond to their **political principals**
 
-- **develop credibility**
+- create **credibility**
 
 ## Developed vs. Developing
 
 Monetary policymakers:
 
-**Developed**: tend to have **established**
+- **Developed**: tend to have **established**
 credibility and autonomy and may be using communication to **protect** it.
 
-**Developing**: **trying to establish**
+- **Developing**: **trying to establish**
 these qualities.
 
 ## Monetary policymaking in developed economies (US)
@@ -46,53 +47,46 @@ these qualities.
 
 ## Monetary policymaking in developing economies (India)
 
-- How is monetary policy **communication credibility** enhanced?
+- How is monetary policy **communication credibility** created?
 
 - What impact do central bank governor **appointments** have on communication
 credibility?
 
-## Some issues we are trying to tackle (1)
+## Some issues (1)
 
-Data (i.e. text) **availability**. Limited series of easily machine
+> Data (i.e. text) **availability**. Limited series of easily machine
 readable texts.
 
-- Tools for accessing the data seem almost as important as tools for
-analysing it.
 
-## Some issues we are trying to tackle (2)
+## Some issues (2)
 
-**Integrating disparate types** of information, e.g. texts from multiple
+> **Integrating disparate types** of information, e.g. texts from multiple
 sources, locational data, macroeconomic indicators.
 
-## Some issues we are trying to tackle (3)
+## Some issues (3)
 
-Identifying **state changes** in complex data.
+> Identifying **state changes** in complex data.
 
-## Some issues we are trying to tackle (4)
+## Some issues (4)
 
-In both topic models and change point models we need to **a priori define**
-features of the underlying quantities (e.g. number of topics, minimum length
-of states).
+Needing to **a priori define** features of the underlying quantities
+(e.g. number of topics, minimum length of states).
 
-## Some issues we are trying to tackle (5)
+## Some issues (5)
 
-Using **topic proportions** as **dependent variables**:
-
-- Beta regression and Zero-One inflated Beta regression
-[e.g @ospina2010inflated] give results that many audiences
-find **confusing**.
+> Using **topic proportions** as **dependent variables**.
 
 ## Data availability (US Federal Reserve Project)
 
-\> 1100 Fed governor speeches from June
+All (> 1100) Fed governor **speeches** from June
 1996 through present are easily accessible.
 
-Government Printing Office has House and Senate transcripts from 2001-2012
+Government Printing Office has House and Senate **transcripts** from 2001-2012
 easily accessible. Filled in with Committee websites, so:
 
-- Relevant House: 188 transcripts from May 1997-2012
+- House: 188 transcripts from May 1997-2012
 
-- Relevant Senate: 144 transcripts from 2001-2012
+- Senate: 144 transcripts from 2001-2012
 
 ## Data availability (US Federal Reserve Project)
 
@@ -110,17 +104,29 @@ efficiency**.
 
 ## Data Availability (Resere Bank of India Project)
 
-All speeches made by central bank governors and deputy governors
-930 documents (1990 to present)
+All **speeches** made by central bank governors and deputy governors
+930 documents (1990 to present).
 
-All news articles mentioning the Reserve Bank of India and/or its officials
-~14000 documents (2000 to present; five leading Indian English newspapers)
+All **press releases** (1990 to present).
 
-All press releases (1990 to present)
+All **news articles** mentioning the Reserve Bank of India and/or its officials
+~14000 documents (2000 to present; five leading Indian English newspapers).
 
 ## Integrating disparate types of information
 
 [FILL IN]
+
+## Integrating disparate types of information (India)
+
+Aim to compare **sentiments** in monetary policy communication with
+sentiments in corresponding news articles.
+
+**Key assumption**: the **difference** between measures from these two
+sources will give us an indication of how credible the RBI's communication is.
+
+- Can examine changes over time.
+
+Is this a **valid indicator**?
 
 ## Identifying state changes
 
@@ -167,6 +173,14 @@ How to overcome this skepticism?
 
 ## Showing results from regressions with proportion dependent variables
 
-Topic proportion data
+Topic proportion data is in $[0,\:1]$ or (more likely) $[0,\:1)$.
+
+Zero-Inflated Beta Regression [e.g @ospina2010inflated] is useful in this
+context.
+
+## Showing results from Zero-Inflated Beta Regression
+
+Beta regression and Zero-One inflated Beta regression gives **results** that
+many audiences find very **confusing**.
 
 ## References

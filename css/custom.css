@@ -1,8 +1,15 @@
-.reveal h1 {
-    padding-bottom: 5%;
+body {
+    background: #990000;
 }
 
-.reveal p {
-    padding-bottom: 3%;
-    text-align: left;
+b, strong {
+    font-weight: 900;
+}
+
+q, blockquote {
+    quotes: none;
+    padding: 20% 20% 5% 5%;
+    background-color: darkslategray;
+    color: white;
+    font-size: larger;
 }
