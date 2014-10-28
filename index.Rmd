@@ -1,0 +1,29 @@
+---
+title: "Speaking Under Stress + Developing Credibility"
+author: "Sahil Deo, Christopher Gandrud, and Kevin Young"
+date: "31 October 2014"
+output:
+  beamer_presentation: default
+  ioslides_presentation:
+    logo: img/HertieLogoBasic.png
+---
+
+## Research overview
+
+Understanding how monetary policymakers' use communication (speeches + press 
+releases) to **respond** to their political principals and 
+**develop credibility**.
+
+
+## Questions we are interested in
+
+- What non-policy responses do monetary policymakers use to respond to stress
+from their political pricipals?
+
+- What do they consider 
+
+
+## Main issues we are trying to tackle
+
+- Integrating disperate types of information, e.g. texts from multiple sources, 
+locational data, macroeconomic indicators.
