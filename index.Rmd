@@ -5,6 +5,7 @@ date: "31 October 2014"
 output:
   ioslides_presentation:
     fig_caption: true
+    logo: img/HertieLogoBasic.png
   beamer_presentation: default
 bibliography:
     - Main.bib
@@ -109,7 +110,13 @@ efficiency**.
 
 ## Data Availability (Resere Bank of India Project)
 
-[FILL IN]
+All speeches made by central bank governors and deputy governors
+930 documents (1990 to present)
+
+All news articles mentioning the Reserve Bank of India and/or its officials
+~14000 documents (2000 to present; five leading Indian English newspapers)
+
+All press releases (1990 to present)
 
 ## Integrating disparate types of information
 
