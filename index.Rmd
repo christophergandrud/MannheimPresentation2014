@@ -52,27 +52,27 @@ these qualities.
 - What impact do central bank governor **appointments** have on communication
 credibility?
 
-## Some issues (1)
+## Issues (1)
 
 > Data (i.e. text) **availability**. Limited series of easily machine
 readable texts.
 
 
-## Some issues (2)
+## Issues (2)
 
 > **Integrating disparate types** of information, e.g. texts from multiple
 sources, locational data, macroeconomic indicators.
 
-## Some issues (3)
+## Issues (3)
 
 > Identifying **state changes** in complex data.
 
-## Some issues (4)
+## Issues (4)
 
-Needing to **a priori define** features of the underlying quantities
+> Needing to **a priori define** features of the underlying quantities
 (e.g. number of topics, minimum length of states).
 
-## Some issues (5)
+## Issues (5)
 
 > Using **topic proportions** as **dependent variables**.
 
