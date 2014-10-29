@@ -33,13 +33,13 @@ these qualities.
 
 ## Monetary policymaking in developed economies (US)
 
-- What do monetary policymakers consider stressful?
+- What do monetary policymakers **consider stressful**?
 
     + Mandated areas?
 
     + Something else (e.g. housing)?
 
-- What **non-policy tools** do they use to respond to this stress?
+- What **non-policy tools** do they use to **respond** to this stress?
 
     + Reaching out to important interest groups?
 
@@ -60,8 +60,8 @@ readable texts.
 
 ## Issues (2)
 
-> **Integrating disparate types** of information, e.g. texts from multiple
-sources, locational data, macroeconomic indicators.
+> **Integrating disparate types** of information, including multiple estimated
+quantities.
 
 ## Issues (3)
 
@@ -69,8 +69,7 @@ sources, locational data, macroeconomic indicators.
 
 ## Issues (4)
 
-> Needing to **define a priori** features of the underlying quantities
-(e.g. number of topics, minimum length of states).
+> Needing to **define a priori** features of the underlying quantities.
 
 ## Issues (5)
 
@@ -95,10 +94,10 @@ Effectively, our data is limited to the late 1990s through (about) the
 present.
 
 Greatly **limits the generalisability** of our findings as this is a very
-particular period of US monetary policymaking.
+particular period of US monetary policy-making.
 
 More work needs to be done **creating corpora** of legislative and
-monetary policymaking transcripts.  
+monetary policy-making transcripts.  
 
 Should be **easily and freely accessible** to improve **scientific
 efficiency**.
@@ -115,9 +114,20 @@ All **news articles** mentioning the Reserve Bank of India and/or its officials
 
 Again, limited to a **specific and particular period of time**.
 
-## Integrating disparate types of information
+## Integrating disparate types of information (US)
 
-[FILL IN]
+- Speeches (topic modelling),
+
+- Scrutiny (change point analysis of Congressional hearings),
+
+- Speech locations (Congressional donor?)
+
+- Macroeconomic (e.g. inflation, Case-Schiller housing price index)
+
+Ballooning **researchers degrees** of freedom.
+
+Difficult to fully document in one article, but are each **publishable on their
+own?**
 
 ## Integrating disparate types of information (India)
 
@@ -133,17 +143,19 @@ Is this a **valid indicator**?
 
 ## Identifying state changes
 
-Posit that there are different "scrutiny states" (e.g. low, high).
+Posit that there are different "**scrutiny states**" (e.g. low, high).
 
 Each month or congressional hearing is not independent. But there is some
 underling scrutiny state that spans months.
 
-Currently we use multi-variate change point analysis [e.g. @Matteson2014].
+Currently we use **multi-variate change point analysis** [@Matteson2014].
 
-Change point identification + interpretation -> multinomial variable
+Change point identification + interpretation -> multi-nomial variable
 $[low,\: high]$
 
-How valid is this? What type of robustness checks could we conduct?
+**Prior experience** of change point + text analysis?
+
+How **valid** is this? What type of **robustness checks** could we conduct?
 
 ## Defining features a priori
 
@@ -158,10 +170,10 @@ specification of **number of topics**.
 Guided by **substantive prior knowledge** + what we **learn from the
 data**.
 
-**Rule of thumb for change point**: aim for the smallest substantively
-meaningful minimum sizes to avoid arbitrarily ignoring shorter clusters.
+- **Rule of thumb for change point**: aim for the smallest substantively
+meaningful minimum size to avoid arbitrarily ignoring shorter clusters.
 
-**Rule of thumb for topic modelling**: smallest number of topics without
+- **Rule of thumb for topic modelling**: smallest number of topics without
 overlap.
 
 ## Change Point in House Hearings
@@ -183,10 +195,10 @@ How to overcome this skepticism?
 
 Topic proportion data is in $[0,\:1]$ or (more likely) $[0,\:1)$.
 
-Zero-Inflated Beta Regression [e.g @ospina2010inflated] is useful in this
+**Zero-Inflated Beta Regression** [e.g @ospina2010inflated] is useful in this
 context.
 
-- Utilises a mixed discrete-continuous distribution
+- Utilises a **mixed discrete-continuous** distribution
 
     + Bernoulli distribution used for the discrete component, e.g.
     $\mathrm{Pr}(y = 0)$.
