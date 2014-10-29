@@ -69,12 +69,13 @@ sources, locational data, macroeconomic indicators.
 
 ## Issues (4)
 
-> Needing to **a priori define** features of the underlying quantities
+> Needing to **define a priori** features of the underlying quantities
 (e.g. number of topics, minimum length of states).
 
 ## Issues (5)
 
-> Using **topic proportions** as **dependent variables**.
+> **Showing** results from models where **topic proportions** are **dependent
+variables**.
 
 ## Data availability (US Federal Reserve Project)
 
@@ -112,6 +113,8 @@ All **press releases** (1990 to present).
 All **news articles** mentioning the Reserve Bank of India and/or its officials
 ~14000 documents (2000 to present; five leading Indian English newspapers).
 
+Again, limited to a **specific and particular period of time**.
+
 ## Integrating disparate types of information
 
 [FILL IN]
@@ -135,7 +138,12 @@ Posit that there are different "scrutiny states" (e.g. low, high).
 Each month or congressional hearing is not independent. But there is some
 underling scrutiny state that spans months.
 
-How to estimate?
+Currently we use multi-variate change point analysis [e.g. @Matteson2014].
+
+Change point identification + interpretation -> multinomial variable
+$[low,\: high]$
+
+How valid is this? What type of robustness checks could we conduct?
 
 ## Defining features a priori
 
@@ -178,9 +186,33 @@ Topic proportion data is in $[0,\:1]$ or (more likely) $[0,\:1)$.
 Zero-Inflated Beta Regression [e.g @ospina2010inflated] is useful in this
 context.
 
+- Utilises a mixed discrete-continuous distribution
+
+    + Bernoulli distribution used for the discrete component, e.g.
+    $\mathrm{Pr}(y = 0)$.
+
+    + Beta distribution used for the continuous component, e.g. $0 < y < 1$
+
 ## Showing results from Zero-Inflated Beta Regression
 
 Beta regression and Zero-One inflated Beta regression gives **results** that
 many audiences find very **confusing**.
+
+Coefficient signs for the discrete and continuous parts have **opposite
+interpretations**.
+
+- Positive coefficient in continuous part indicates **topic is spoken about
+more**.
+
+- Positive coefficient in discrete part indicates higher probability of
+**not discussing a topic at all**.
+
+## Predicting Fed topics in speeches
+
+<img src="img/MonetaryPolicy.png" height=500 width="550"/>
+
+## Predicting Fed topics in speeches
+
+<img src="img/BankingRegulation.png" height=500 width="550"/>
 
 ## References
