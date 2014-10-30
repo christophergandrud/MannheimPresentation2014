@@ -95,12 +95,6 @@ present.
 Greatly **limits the generalisability** of our findings as this is a very
 particular period of US monetary policy-making.
 
-More work needs to be done **creating corpora** of legislative and
-monetary policy-making transcripts.  
-
-Should be **easily and freely accessible** to improve **scientific
-efficiency**.
-
 ## Data Availability (Resere Bank of India Project)
 
 All **speeches** made by central bank governors and deputy governors
@@ -112,6 +106,18 @@ All **news articles** mentioning the Reserve Bank of India and/or its officials
 ~14000 documents (2000 to present; five leading Indian English newspapers).
 
 Again, limited to a **specific and particular period of time**.
+
+## Data availability
+
+What technologies we have for creating corpora/what corpora are available 
+likely has **as much impact on our results/what we can study** as our estimation 
+methods.
+
+More work needs to be done **creating corpora** of legislative and
+monetary policy-making transcripts.  
+
+Should be **easily and freely accessible** to improve **scientific
+efficiency**.
 
 ## Integrating disparate types of information (US)
 
@@ -152,7 +158,7 @@ Currently we use **multi-variate change point analysis** [@Matteson2014].
 Change point identification + interpretation -> variable with values:
 $[low,\: high]$
 
-**Prior experience** of change point + text analysis?
+Is there **prior experience** with change point analysis + text analysis?
 
 How **valid** is this? What type of **robustness checks** could we conduct?
 
