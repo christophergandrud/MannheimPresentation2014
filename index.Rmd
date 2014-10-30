@@ -4,12 +4,11 @@ author: "Sahil Deo, Christian Franz, Christopher Gandrud, and Kevin Young"
 date: "31 October 2014"
 output:
   ioslides_presentation:
-    fig_caption: true
-    logo: img/HertieLogoBasic.png
     css: css/custom.css
+    fig_caption: yes
+    logo: img/HertieLogoBasic.png
   beamer_presentation: default
-bibliography:
-    - Main.bib
+bibliography: Main.bib
 ---
 
 ## Research overview
@@ -35,9 +34,9 @@ these qualities.
 
 - What do monetary policymakers **consider stressful**?
 
-    + Mandated areas?
+    + Poor performance in mandated areas?
 
-    + Something else (e.g. housing)?
+    + Poor performance in something else (e.g. housing)?
 
 - What **non-policy tools** do they use to **respond** to this stress?
 
@@ -82,7 +81,7 @@ All (> 1100) Fed governor **speeches** from June
 1996 through present are easily accessible.
 
 Government Printing Office has House and Senate **transcripts** from 2001-2012
-easily accessible. Filled in with Committee websites, so:
+accessible. **Filled in** with Committee websites, so:
 
 - House: 188 transcripts from May 1997-2012
 
@@ -150,7 +149,7 @@ underling scrutiny state that spans months.
 
 Currently we use **multi-variate change point analysis** [@Matteson2014].
 
-Change point identification + interpretation -> multi-nomial variable
+Change point identification + interpretation -> variable with values:
 $[low,\: high]$
 
 **Prior experience** of change point + text analysis?
@@ -226,5 +225,9 @@ more**.
 ## Predicting Fed topics in speeches
 
 <img src="img/BankingRegulation.png" height=500 width="550"/>
+
+---
+
+> Suggestions and comments very welcome.
 
 ## References
