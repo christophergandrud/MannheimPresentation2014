@@ -42,7 +42,7 @@ these qualities.
 
     + Reaching out to important interest groups?
 
-    + What they talk about?
+    + What topics do they talk about?
 
 ## Monetary policymaking in developing economies (India)
 
@@ -158,6 +158,19 @@ Currently we use **multi-variate change point analysis** [@Matteson2014].
 Change point identification + interpretation -> variable with values:
 $[low,\: high]$
 
+## Change Point in House Hearings
+
+<img src="img/ScrutinyHouseFedCP.png" alt="House Hearings with Fed" height=500 width="600"/>
+
+## Compare to Annual Bill Counts from @Binder2014
+
+<img src="img/ScrutinyBills.png" alt="Scrutiny from Bill Counts" height=400 width="500"/>
+
+## Questions about integrating change point and text analysis
+
+<br>
+<br>
+
 Is there **prior experience** with change point analysis + text analysis?
 
 How **valid** is this? What type of **robustness checks** could we conduct?
@@ -181,20 +194,19 @@ meaningful minimum size to avoid arbitrarily ignoring shorter clusters.
 - **Rule of thumb for topic modelling**: smallest number of topics without
 overlap.
 
-## Change Point in House Hearings
-
-<img src="img/ScrutinyHouseFedCP.png" alt="House Hearings with Fed" height=500 width="600"/>
-
 ## Topic proportions from Fed Speeches
 
 <img src="img/TopicsBasic.png" alt="Topic proportions" height=500 width="600"/>
 
 ## Defining features a priori
 
+<br>
+<br>
+
 Nonetheless **reviewers seem to be skeptical** of methods where features of
 the data need to be defined a priori.
 
-How to overcome this skepticism?
+How to **overcome** this skepticism?
 
 ## Showing results from regressions with proportion dependent variables
 
